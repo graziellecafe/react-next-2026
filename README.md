@@ -18,7 +18,7 @@ Nesse módulo você dará os seus primeiros passos com o React entendendo o que 
 ### 🔍 O que é o React é:
 
 - Uma biblioteca para criar interfaces declarativas: Você descreve como a UI (interface) deve ser com base no estado (propriedades, componentes), e o React gerencia as mudanças no DOM.
-- Baseado em componentes: A grande maioria do código é dividido em componentes (pequenos pesados de bloco) reutilizáveis e isolados.
+- Baseado em componentes: A grande maioria do código é dividido em componentes (pequenos pedaços de bloco) reutilizáveis e isolados.
 - Reativo: Atualiza a interface automaticamente quando o estado muda.
 - Unidirecional no fluxo de dados: O estado flui de cima para baixo (de pai para filho), o que facilita o controle da aplicação.
 - Virtual DOM: Usa uma representação virtual do DOM para fazer atualizações eficientes.
@@ -35,9 +35,9 @@ Existem duas formas principais para criar aplicações utilizando o React como b
 - O navegador carrega um HTML básico junto com todos os arquivos de Javascript e CSS.
 - Pode ser hospedada em qualquer CDN (ex: AWS S3).
 
-### 🔍 SSR = Server Side Rendering
+### 🔍 SSR - Server Side Rendering
 
-- É uma aplicação que carrega uma única página HTML e atualiza dinamigamente
+- É uma aplicação que carrega uma única página HTML e atualiza dinamicamente
 - O navegador carrega um HTML básico junto com os arquivos de Javascript e CSS
 - É necessário um servidor NodeJS para hospedar a aplicação.
 - Consegue buscar os dados no servidor antes de carregar no front end.
@@ -64,3 +64,11 @@ Existem duas formas principais para criar aplicações utilizando o React como b
 - Essa estrutura permite que dados sejam enviados de cima para baixo. De componentes (elementos) pai para componentes (elementos) filho.
 
 Vale lembrar que todo esse processo é feito automaticamente pelo React. Você como dev não precisa fazer nada nessa parte de renderização direta no Javascript.
+
+## 📌 Hooks
+
+### 🔍 Gerenciamento de Estado (Hooks e Context API)
+
+**O que é**: Imagine que seu app é um formulário. O "estado" é o que está escrito nos campos agora. Se o usuário muda de página e volta, o app precisa "lembrar" o que foi digitado. Gerenciar estado é controlar como a informação flui e é guardada.
+
+**Hooks**: Um hook é uma função especial que permite aos componentes funcionais do React gerenciarem estado e ciclo de vida. Antes dos hooks, só podiamos fazer isso com classes. Eles "engancham" a nossa função nas funcionalidades internas do React, permitindo criar aplicações mais simples, limpas e reutilizáveis.
